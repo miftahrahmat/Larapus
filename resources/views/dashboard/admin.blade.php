@@ -13,7 +13,7 @@
               Selamat datang di Menu Administrasi Larapus. Silahkan pilih menu administrasi yang diinginkan.
               <hr>
               <h4>Statistik Penulis</h4>
-              <canvas id="chartPenulis" width="500" height="130"></canvas>
+              <canvas id="chartPenulis" width="500" height="130"></canvas> 
           </div>
         </div>
       </div>
@@ -48,10 +48,11 @@
     var ctx = document.getElementById("chartPenulis").getContext("2d");
 
     var authorChart = new Chart(ctx, {
-        type: 'pie',
+        type: 'bar',
         data: data,
         options: options
     });
+
     </script>
 
 @endsection

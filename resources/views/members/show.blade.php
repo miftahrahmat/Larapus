@@ -13,9 +13,9 @@
           <div class="panel-heading">
             <h2 class="panel-title">Detail {{ $member->name }}</h2>
           </div>
-
+          <img src="/uploads/avatars/{{ auth()->user()->avatar }}" style="width:100px; height:100px; border-radius:50%; margin-left: 10px; margin-top: 10px" >
           <div class="panel-body">
-            <p>Buku yang sedang dipinjam:</p>
+            <p><mark style="color:black; border-radius:3px;">Buku yang sedang dipinjam : </mark></p>
             <table class="table table-condensed table-striped">
               <thead>
                 <tr>
@@ -36,7 +36,7 @@
                 @endforelse
               </tbody>
             </table>
-            <p>Buku yang telah dikembalikan:</p>
+            <p><mark style="color:black; border-radius:3px;">Buku yang telah dikembalikan : </mark></p>
             <table class="table table-condensed table-striped">
               <thead>
                 <tr>

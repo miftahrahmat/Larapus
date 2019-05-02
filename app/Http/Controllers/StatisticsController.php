@@ -23,7 +23,7 @@ class StatisticsController extends Controller
                     if ($stat->is_returned) {
                         return $stat->updated_at;
                     }
-                    return "Masih dipinjam";
+                    return "<mark style='color:black; border-radius:3px;'>Masih dipinjam</mark>";
                 })->make(true);
         }
 
